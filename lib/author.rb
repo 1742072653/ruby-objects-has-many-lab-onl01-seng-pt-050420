@@ -11,7 +11,7 @@ class Author
 
   def add_post(post)
     if !@posts.include?(post)
-      @posts << postif 
+      @posts << post
       post.author = self
       @@post_count += 1
     end
