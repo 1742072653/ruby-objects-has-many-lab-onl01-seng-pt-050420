@@ -10,8 +10,8 @@ class Author
   end
 
   def add_post(post)
-    
-      @posts << post
+    if !@posts.include?(post)
+      @posts << postif 
       post.author = self
       @@post_count += 1
     end
